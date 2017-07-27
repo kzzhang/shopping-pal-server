@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/kzzhang/shopping-pal-server/issues"
   },
-  "homepage": "https://github.com/kzzhang/shopping-pal-server#readme"
+  "homepage": "https://github.com/kzzhang/shopping-pal-server#readme",
   "engines": {
     "node": "8.1.2"
   }
