@@ -1,0 +1,31 @@
+{
+  "name": "shopping-pal-server",
+  "version": "1.0.0",
+  "description": "Sends encrypted amazon web advertising api requests",
+  "main": "server.js",
+  "scripts": {
+    "test": "execute",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzzhang/shopping-pal-server.git"
+  },
+  "keywords": [
+    "aws",
+    "amazon",
+    "web",
+    "advertising",
+    "android",
+    "nodejs"
+  ],
+  "author": "Kevin Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kzzhang/shopping-pal-server/issues"
+  },
+  "homepage": "https://github.com/kzzhang/shopping-pal-server#readme"
+  "engines": {
+    "node": "8.1.2"
+  }
+}
