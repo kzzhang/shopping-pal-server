@@ -1,18 +1,21 @@
-http = require('http');
-fs = require('fs');
-var url = require('url');
+// Small sample server to mimick retrieving credentials from a database
 
-var server = http.createServer(function(request, response) {
-	if (request.method == 'GET') {
-		response.writeHead(200, {'Content-Type':'application/json'});
-		var result = {'status':'Success'};
-		response.write(JSON.stringify(result));
-	} else {
-		response.writeHead(404);
-		var err = {'status':'Method not supported'};
-		response.write(JSON.stringify(err));
-	}
-	response.end();
+var http = require('http');
+var express = require('express');
+var app = express();
+
+var port = process.env.PORT || 8080;
+
+app.get('/crendentials', function(req, res) {
+	var crendentials = {
+		'awsAccessKeyId' : 'AKIAIG6IDQBED55KXAZA',
+		'awsSecretKey' : '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'
+	};
+	res.json(crendentials);
+	res.end();
 });
 
-server.listen(8080);
+
+app.listen(port, function() {
+	console.log("Listening on port: " + port);
+});

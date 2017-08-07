@@ -4,6 +4,7 @@
   "description": "Sends encrypted amazon web advertising api requests",
   "main": "server.js",
   "dependencies": {
+    "amazon-product-api": "^0.4.4",
     "express": "~4.15.3"
   },
   "scripts": {
