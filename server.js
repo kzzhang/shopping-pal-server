@@ -6,12 +6,12 @@ var app = express();
 
 var port = process.env.PORT || 8080;
 
-app.get('/crendentials', function(req, res) {
-	var crendentials = {
+app.get('/credentials', function(req, res) {
+	var credentials = {
 		'awsAccessKeyId' : 'AKIAIG6IDQBED55KXAZA',
 		'awsSecretKey' : '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'
 	};
-	res.json(crendentials);
+	res.json(credentials);
 	res.end();
 });
 
